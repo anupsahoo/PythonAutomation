@@ -1,0 +1,27 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+"""
+get_attribute()- It is used to capture any backend attribute from the web element. It returns string value
+"""
+
+class GetAttribute():
+
+    def test(self):
+        baseUrl = "file:///C:/Users/5013505470/Desktop/pratice.html"
+        driver = webdriver.Chrome()
+        driver.maximize_window()
+        driver.implicitly_wait(10)
+        driver.get(baseUrl)
+
+        element = driver.find_element_by_id("name")
+        result = element.get_attribute("type")
+
+        print("Value of attribute is: " + result)
+        time.sleep(1)
+        driver.quit()
+
+
+ff = GetAttribute()
+ff.test()

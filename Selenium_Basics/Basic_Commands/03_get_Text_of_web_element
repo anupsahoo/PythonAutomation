@@ -1,0 +1,26 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+"""
+Web element control- To perform an operation on a web element we need to identify the locators and perform our desired action. There are 3 types of methods are available to work on web elements.
+Data capture methods. gettext()- it is used to capture the visible text from the web element.it returns string value if object exists in the dom, if not then it returns empty 
+
+"""
+
+class GetText ():
+
+    def test(self):
+        baseUrl = "file:///C:/Users/5013505470/Desktop/pratice.html"
+        driver = webdriver.Chrome()
+        driver.maximize_window()
+        driver.implicitly_wait(10)
+        driver.get(baseUrl)
+        openTabElement = driver.find_element(By.ID, "opentab")
+        elementText = openTabElement.text
+        print("Text on element is: " + elementText)
+        time.sleep(1)
+        driver.quit()
+
+
+ff = GetText()
+ff.test()

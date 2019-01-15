@@ -1,0 +1,68 @@
+Selenium IDE
+----------
+Selenium IDE
+	It is a Firefox extension. An extension adds features and functions to a browser. It’s created using familiar web-based technology—HTML, CSS, and JavaScript. It is integrated development Environment.
+	It is a Functional Open Source Firefox extension developed in 2006 by ‘Shinya’ .Python is not a UI, So as selenium Web driver. This is just a package or lib. Selenium IDE is a UI based tool, which contains record and playback feature. Selenium IDE is implemented as a Firefox extensions, so it is available as Firefox extension.
+	Installation Steps
+o	Open Firfox Browser navigate to google. 
+o	Type Download selenium IDE
+o	Click on the first option and navigate to selenium community 
+o	Find selenium IDE section and download it.
+o	Restart the browser
+o	In order to view the extension, Go to Firefox browser, press alt button, Go to Tools.
+	Developing Selenium IDE scripts typically using 3 steps. 
+o	Command – It is a Build in Java Script Library Which is used to perform specific operation on the web element  
+o	Target - - Target Locator – Edit box, button, drop down, checkbox, radio, weblink, image
+o	It is a feature available in selenium ide tool which is used to identify web element from html page source
+o	There are four types of Locator- Id , name, xpath, css selector
+	Showcase, How to Selenium IDE Script Written manually and start with basic xpath syntax. 
+o	To Cross Verify we need to install firepath and firebug , chropath.
+	Then My first Tests should be created. – Firebug, Firepath Batch execution on IDE, Steps to Create on Batch
+	Disadvantages of IDE
+o	It will not support iteration and conditional statement
+o	Selenium IDE doesn't support error handling
+o	Doesn't support test script grouping
+
+	Advantages of IDE
+o	Programming language experience is not required for Selenium IDE
+o	Selenium IDE provides Logging capabilities using file login plug-in.
+o	In Selenium IDE, user can debug and set breakpoints
+
+Selenium RC
+	Java Script Test Runner” which was later named as selenium core. 
+	It is an Open Source tool implemented by json from thought works Company. 
+	It is just a Collection of Java Script Lib
+	It does not contains UI and record Play back feature 
+	It Supports Multiple Browsers Chrome, firefox etc.
+	It supports multiple language like, java, .net and python.
+	Supports multiple OS like , windows, Linux, Mac
+Selenium RC Vs QTP
+2004	2002
+No GUI	GUI
+Supports Only Web 	Supports ALL
+
+Supports Multiple OS	Supports Windows
+Any Lang	Supports VB
+Any Browser	Firefox, IE,Chrome
+Open Source	Commercial Tool
+5% market Share 	70% 
+Java Script Was the Drawback	
+
+Why RC did not click in the Market?
+Same Origin Policy Restriction – 
+	Testers needed to install local copies of both Selenium Core (a JavaScript program) and the web server containing the web application being tested so they would belong to the same domain. 
+	To avoid “Same Origin Policy” proxy injection method is used, in proxy injection mode the Selenium Server acts as a client configured HTTP proxy, which sits between the browser and application under test and then masks the AUT under a fictional URL
+	Selenium uses java script to drives tests on a browser; Selenium injects its own js to the response which is returned from aut. But there is a java script security restriction (same origin policy) which lets you modify html of page using js only if js also originates from the same domain as html. This security restriction is of utmost important but spoils the working of Selenium. This is where Selenium server comes to play an important role.
+	It simply means Selenium webserver sit between the browsers eg Firefox and application (which is under test) for eg www.google.com, and mask it under a fictional url - so that it can trick the browser of thinking that both originated from the same url. As a result allow user to perform automated task on Application. In other word, Selenium server act as an HTTP proxy to "trick" the browser into believing that Selenium Core and the web application being tested come from the same origin
+
+	The same-origin policy is an important concept in the web application security model. Under the policy, a web browser permits scripts contained in a first web page to access data in a second web page, but only if both web pages have the same origin. An origin is defined as a combination of URI scheme, hostname, and port number .This policy prevents a malicious script on one page from obtaining access to sensitive data on another web page through that page's Document Object Model. Same Origin policy prohibits JavaScript code from accessing elements from a domain that is different from where it was launched
+	
+Let’s see an example how same origin policy prohibits javascript code from accessing other web pages. Suppose  the HTML code in www.seleniumwebdriver.in uses a JavaScript program "randomScript.js". The same origin policy will only allow randomScript.js to access pages within www.seleniumwebdriver.in such as www.seleniumwebdriver.in/contactvineet, www.seleniumwebdriver.in/home, or www.seleniumwebdriver.in/register. However, it cannot access pages from different sites .This is the reason why prior to Selenium RC, testers needed to install local copies of both Selenium Core (a JavaScript program) and the web server containing the web application being tested so they would belong to the same domain. 
+
+	So another ThoughtWork's engineer, Paul Hammant, decided to create a server that will act as an HTTP proxy to "trick" the browser into believing that Selenium Core and the web application being tested come from the same domain. This system became known as the Selenium Remote Control or Selenium 1. Simon Stewart created WebDriver circa 2006 when browsers and web applications were becoming more powerful and more restrictive with JavaScript programs like Selenium Core. It was the first cross-platform testing framework that could control the browser from the OS level.
+	In 2008, the whole Selenium Team decided to merge WebDriver and Selenium RC to form a more powerful tool  called Selenium 2, with WebDriver being the core.
+
+
+How Selenium was named?
+	When body has excess content of Mercury, Selenium is antidote for mercury poisoning.
+	In earlier days most populated tool was QTP which was developed by Mercury Interactive. And since this tool was Killing QTP, a Mercury Product hence it was named as Selenium.

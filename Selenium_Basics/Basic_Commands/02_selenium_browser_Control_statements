@@ -1,0 +1,76 @@
+Browser Control
+***********************
+
+Interview Question
+********************
+Open google.com and verify the tile is present or not?
+***********************
+
+Program
+************************
+
+from selenium import webdriver
+
+class LoginValidation(object):
+
+    def loginValidation(self):
+        driver=webdriver.Chrome()
+        driver.get("https://demo.actitime.com")
+        print(driver.titile)	
+       
+LoginValidation().loginValidation()
+******************
+
+•	Whenever Webdriver commands gets executed all the browser history and add-ons are by default disabled. 
+Every executions Webdriver create a new instance of browsers.
+ 
+There are 14 reusable browser control methods are most commonly used. Those are 
+	Driver.get (URL) -> Get method is used to enter the URL in the Webdriver address bar.
+	Driver.close () -> Close method is used to close the current browser in which webdriver has the focus.
+	Driver.quit () -> Quit method is used to close all the browser instances launched by the current Webdriver.
+	Driver.title -> This method returns the title of the webpage
+	Driver.current_url -> This method is used to get the URL
+	Driver.page_source -> This method is used to get the web page source code.
+	Driver.maximize_window () -> this method is used to maximize the window.
+	Driver.minimize_window () -> this method is used to minimize the window opened by the webdriver.
+	Driver.back () -> this method is used to navigate back in the browser.
+	Driver.forward () -> this method is used to forward in the browser.
+	Driver.refresh () -> this method is used to refresh the web page.
+	Driver.set_window_size () -> Sets the width and height of the current window.
+	Driver.set_window_position () -> Sets the x, y position of the current window.
+	Driver.set_window_rect () -> Sets the X, Y coordinates of the window as well as height and width of the current window. 
+		 
+Interview Questions 
+*********************************
+	Write a selenium program to get the size of the current window?
+	Write a selenium program to get the title of the window?
+	How selenium communicates with browsers?	
+
+Web element control 
+****************************
+To perform an operation on a web element we need to identify the locators and perform our desired action. There are 3 types of methods are available to work on web elements.
+Data capture methods
+	gettext()- it is used to capture the visible text from the web element.it returns string value if object exists in the dom, if not then it returns empty 
+	get_attribute()- It is used to capture any backend attribute from the web element. It returns string value
+	get_location()- it is used to capture x and y co-ordinates of the web element
+	get_size()- it is used to capture the dimension of the object. i.e hight and width.
+	get_CSS_Value()- it is used to capture style related attribute of the web element. In case of color it is always returns rgb code.
+
+Verification Method
+*******************************
+	isSelected() – it is used to check the checkbox or drop down or radio button is already selected or not. It returns Boolean value
+	Isdisplayed()- it is used to check if the object is active in the UI. It returns true if the object is performable 
+	Isenabled(). It is used to check the object is available in the UI. 
+
+Operational Methods
+********************************
+	Sendkeys ()- It is used to pass the data to the text box or a text area. It takes argument as string
+	Click() – it performs left mouse click operation. 
+	Clear()- it is used to reset the existing data in the text box
+	Submit()- it is used to perfrom the left click opearion only on submit button. 
+
+Interview questions
+****************************
+Open google.com and identify which element is displayed to perform action?
+Create a customer in actime?
+Customer should be created message verification 

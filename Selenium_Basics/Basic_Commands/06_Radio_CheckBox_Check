@@ -1,0 +1,34 @@
+from selenium import webdriver
+import time
+
+class RadioButtonsAndCheckboxes():
+
+    def test(self):
+        baseUrl = "file:///C:/Users/5013505470/Desktop/pratice.html"
+        driver = webdriver.chrome()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(10)
+
+        pythonRadioBtn = driver.find_element_by_id("Pythonradio")
+        pythonRadioBtn.click()
+
+        time.sleep(2)
+        seleniumRadioBtn = driver.find_element_by_id("Seleniumradio")
+        seleniumRadioBtn.click()
+
+        time.sleep(2)
+        autoCheckbox = driver.find_element_by_id("Pythoncheck")
+        autoCheckbox.click()
+
+        time.sleep(2)
+        selCheckbox = driver.find_element_by_id("Seleniumcheck")
+        selCheckbox.click()
+
+        print("BMW Radio button is selected? " + str(pythonRadioBtn.is_selected())) # True if selected, False is not selected
+        print("Benz Radio button is selected? " + str(seleniumRadioBtn.is_selected()))
+        print("BMW Checkbox is selected? " + str(autoCheckbox.is_selected()))
+        print("Benz Checkbox is selected? " + str(selCheckbox.is_selected()))
+
+ff = RadioButtonsAndCheckboxes()
+ff.test()
