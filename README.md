@@ -1,2 +1,2 @@
 # PythonAutomation
-This is For Selenium Documents
+This is For Python Selenium Bindings
