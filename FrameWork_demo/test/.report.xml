@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="pytest" skips="0" tests="1" time="49.491"><testcase classname="test_TC01_SearchProduct.Test_search" file="test_TC01_SearchProduct.py" line="13" name="test_searchproduct" time="49.04444766044617"></testcase></testsuite>
