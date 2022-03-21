@@ -1,5 +1,6 @@
 import pytest
-from framework.base.Extended_Webdriver import Extended_Webdriver
+from ..base.Extended_Webdriver import Extended_Webdriver
+
 
 @pytest.fixture()
 def setUp():
