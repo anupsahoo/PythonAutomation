@@ -1,4 +1,4 @@
-from framework.base.Selenium_driver import SeleniumDriver
+from ..base.Selenium_driver import SeleniumDriver
 
 class LoginPage(SeleniumDriver):
 
